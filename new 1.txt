@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Menu</title>
+  <style>
+    /* Basic styling for better visualization */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    ul ul {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    li:hover > ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a>
+      <ul>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Mission</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Services</a>
+      <ul>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Graphic Design</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Your page content goes here -->
+
+</body>
+</html>
